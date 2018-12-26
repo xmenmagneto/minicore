@@ -1,0 +1,12 @@
+package com.apple.minicore.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class ComponentNotFoundException extends RuntimeException {
+
+    public ComponentNotFoundException(String exception) {
+        super(exception);
+    }
+}
